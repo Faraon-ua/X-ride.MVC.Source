@@ -1,0 +1,1025 @@
+﻿body
+{
+    background: #fff url(site_images/body-bg.png) center top no-repeat;
+}
+
+header nav
+{
+    overflow: hidden;
+    background: url(site_images/nav-bg.png) no-repeat;
+}
+header nav li
+{
+    float: left;
+}
+header nav li a
+{
+    font: 13px/67px "Trebuchet MS" ,Arial,Helvetica,sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    width: 140px;
+    display: inline-block;
+}
+header nav li.active a, header nav li a:hover
+{
+    background: #39beda;
+}
+
+#main
+{
+    font-size: 0.75em;
+    margin: 0 auto;
+    position: relative;
+    width: 980px;
+}
+
+html, body, div, form, a, ul, li, p, h1, h2, h3, h4, h5, h6, span, input, label, textarea
+{
+    margin: 0;
+    padding: 0;
+}
+
+html, body
+{
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    overflow-x: hidden;
+    overflow-y: visible;
+    font-family: Tahoma;
+    line-height: 18px;
+}
+
+a
+{
+    text-decoration: none;
+    color: white;
+}
+
+ul, li
+{
+    list-style-type: none;
+}
+
+p
+{
+    color: #9fbff4;
+    font-size: 12px;
+}
+
+h1
+{
+    font-size: 18px;
+    color: #568dea;
+}
+h2
+{
+    font-size: 16px;
+    color: #568dea;
+}
+h3
+{
+    font-size: 14px;
+    color: #568dea;
+}
+h4
+{
+    font-size: 13px;
+    color: #568dea;
+}
+h5
+{
+    font-size: 12px;
+    color: #568dea;
+}
+h6
+{
+    font-size: 11px;
+    color: #568dea;
+}
+
+form
+{
+    color: white;
+}
+
+/* Parallax using smart3D */
+#wrap
+{
+    position: fixed;
+    width: 700px;
+    height: 100%;
+    z-index: 99999;
+}
+.parallax
+{
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    width: 700px;
+    height: 800px;
+    overflow: hidden;
+}
+.parallax li
+{
+    position: relative;
+    width: 800px;
+    height: 900px;
+}
+.point
+{
+    position: absolute;
+    height: 100%;
+    text-align: right;
+    width: 100%;
+    background: url('img/point.png') 0px 1px no-repeat;
+    padding-left: 10px;
+}
+.point a
+{
+    position: fixed;
+    left: 640px;
+    color: white;
+    font-size: 12px;
+    width: 50px;
+    margin: 10px 0 0 0;
+    padding: 0;
+    z-index: 99999;
+}
+.line
+{
+    height: 1px;
+    background: url('img/line.png') repeat-x;
+    width: 100%;
+    margin-top: 11px;
+    z-index: 1;
+}
+#ozone
+{
+    top: 150px;
+    left: 400px;
+}
+#enjoy
+{
+    top: 215px;
+    left: 195px;
+}
+#engine
+{
+    top: 270px;
+    left: 400px;
+}
+#water
+{
+    top: 350px;
+    left: 380px;
+}
+#trees
+{
+    top: 450px;
+    left: 470px;
+}
+#grass
+{
+    top: 510px;
+    left: 280px;
+}
+
+
+/* Content */
+#glow
+{
+    position: absolute;
+    top: 0px;
+    left: 690px;
+    width: 100%;
+    background: url('img/glow.png') repeat-y;
+    overflow: hidden;
+}
+#content
+{
+    margin: 0 0 0 10px;
+    background: white;
+    min-height: 70px;
+    width: 100%;
+    padding: 10px 0px 0px 20px;
+    z-index: 3333333333333;
+    overflow: hidden;
+}
+
+
+.wrap
+{
+    width: 500px;
+}
+
+
+/* Header */
+#header
+{
+    position: fixed;
+    top: 0px;
+    background: white;
+    width: 100%;
+    height: 50px;
+    border-bottom: solid 1px #568dea;
+    padding: 10px 0 10px 0;
+    z-index: 10;
+}
+#logo
+{
+    float: left;
+    width: 120px;
+    height: 40px;
+    background: url('img/logo.png') no-repeat;
+}
+
+/* Navigation */
+#navigation
+{
+    float: left;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+#navigation li
+{
+    float: left;
+    position: relative;
+}
+#navigation a
+{
+    display: block;
+    position: relative;
+    color: #568dea;
+    padding: 10px 10px 20px 10px;
+    z-index: 13;
+    width: 100%;
+}
+#navigation li.back
+{
+    background: #568dea;
+    height: 3px;
+    z-index: 18;
+    position: absolute;
+    top: 67px;
+}
+#navigation ul
+{
+    position: absolute;
+    top: -999em;
+    width: 160px;
+    border-top: 4px #568dea solid;
+}
+#navigation ul li
+{
+    width: 100%;
+}
+#navigation li:hover
+{
+    visibility: inherit;
+}
+#navigation li:hover ul, #navigation li.sfHover ul
+{
+    background: white;
+    left: -10px;
+    padding: 0 0 0 10px;
+    margin: 0;
+    top: 37px;
+    z-index: 99;
+}
+ul#navigation li:hover li ul, ul#navigation li.sfHover li ul
+{
+    background: white;
+    top: -999em;
+}
+ul#navigation li li:hover ul, ul#navigation li li.sfHover ul, ul#navigation li li li:hover ul, ul#navigation li li li.sfHover ul
+{
+    background: white;
+    left: 160px;
+    top: 0;
+}
+ul#navigation li li:hover li ul, ul#navigation li li.sfHover li ul
+{
+    background: white;
+    top: -999em;
+}
+
+/* navigation arrow */
+.sf-sub-indicator
+{
+    position: absolute;
+    display: block;
+    right: 1.4em;
+    top: 0.9em;
+    width: 10px;
+    height: 10px;
+    text-indent: -999em;
+    overflow: hidden;
+    background: url('img/arrow.png') top left no-repeat;
+}
+
+
+/* Page Name */
+.head
+{
+    float: left;
+    width: 100%;
+    height: 40px;
+    margin: 60px 0 20px 0;
+    background: #568dea;
+    color: white;
+    z-index: 98;
+}
+.head h1
+{
+    padding: 12px 0 0 20px;
+    color: white;
+}
+
+
+
+
+/* HOME PAGE */
+
+
+/* Featured Images */
+#featured
+{
+    float: left;
+    width: 510px;
+    margin: 100px 0 30px 0;
+    z-index: 98;
+}
+#featured a
+{
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin: 0 10px 10px 0;
+    overflow: hidden;
+}
+#featured img
+{
+    width: 100%;
+    height: 100%;
+}
+.caption-bottom
+{
+    color: #568dea;
+    padding: 40px 0 0 0;
+    height: 120px;
+    font-size: 24px;
+    background: white;
+    text-align: center;
+}
+
+/* Participate form */
+#participate
+{
+    float: left;
+    width: 100%;
+    height: 60px;
+    background: none;
+    padding: 0;
+    overflow: hidden;
+    margin: 0 0 20px 0;
+}
+
+/* form names */
+#name
+{
+    float: left;
+    width: 60px;
+    height: 60px;
+    margin: 5px 0 0 40px;
+}
+#name p
+{
+    font-size: 14px;
+}
+#nameLabel
+{
+    float: left;
+    margin: 0;
+    color: #568dea;
+}
+#emailLabel
+{
+    float: left;
+    margin: 20px 0 0 0;
+    color: #568dea;
+}
+
+/* forms */
+#form
+{
+    float: left;
+    width: 200px;
+    height: 60px;
+    margin: 0;
+    padding: 0;
+}
+#nameForm
+{
+    float: left;
+    height: 25px;
+    width: 200px;
+    color: white;
+    background: #9fbff4;
+    border: 1px solid #568dea;
+    padding: 0;
+    margin: 0;
+}
+#nameForm:focus, #emailForm:focus
+{
+    background: white;
+    color: #568dea;
+}
+#emailForm
+{
+    float: left;
+    height: 24px;
+    width: 200px;
+    color: white;
+    background: #9fbff4;
+    border: 1px solid #568dea;
+    padding: 0;
+    margin: -7px 0 0 0;
+}
+
+/* participate button */
+#parButton
+{
+    float: left;
+    margin: -14px 0 0 40px;
+    padding: 0;
+    color: white;
+    font-family: Aller;
+    font-size: 24px;
+    height: 60px;
+    width: 160px;
+    border: none;
+    background: #568dea;
+}
+#parButton:active, #parButton:hover
+{
+    background: #9fbff4;
+    border: 1px solid #568dea;
+}
+
+/* Columns */
+.columns
+{
+    float: left;
+    width: 520px;
+    height: 300px;
+}
+.col
+{
+    float: left;
+    width: 180px;
+    height: 120px;
+    margin: 10px 20px 0px 0;
+    padding: 0 0 0 40px;
+    overflow: hidden;
+}
+.col h1
+{
+    margin: 0;
+    padding: 5px 0 10px 0;
+    color: #568dea;
+    font-weight: normal;
+}
+#col1
+{
+    background: url('img/icons/apple.png') 0px top no-repeat;
+}
+#col2
+{
+    background: url('img/icons/light.png') 0px top no-repeat;
+}
+#col3
+{
+    background: url('img/icons/earth.png') 0px top no-repeat;
+}
+#col4
+{
+    background: url('img/icons/rec.png') 0px top no-repeat;
+}
+
+
+
+
+/* CONTACT PAGE */
+
+
+/* Google map */
+#map_canvas
+{
+    float: left;
+    margin: 0 0 40px 0;
+    width: 500px;
+    height: 320px;
+}
+
+/* contact names and forms */
+#contactUs
+{
+    float: left;
+    width: 500px;
+    margin: 0 0 40px 0;
+    padding: 0;
+}
+
+/* contact form names */
+#contactName
+{
+    float: left;
+    width: 80px;
+    margin: 0;
+}
+#contactName p
+{
+    float: left;
+    color: #568dea;
+    font-size: 14px;
+    width: 80px;
+}
+#nameLabel
+{
+    float: left;
+    margin: 5px 0 0 0;
+    padding: 0;
+}
+#emailLabel
+{
+    float: left;
+    margin: 15px 0 0 0;
+    padding: 0;
+}
+#textLabel
+{
+    float: left;
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+/* contact form */
+#contactTextForm
+{
+    float: left;
+    width: 220px;
+    height: 120px;
+    background: #9fbff4;
+    border: 1px solid #568dea;
+    color: white;
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+#contactForm
+{
+    float: left;
+    width: 240px;
+    margin: 0;
+}
+#contactNameForm
+{
+    float: left;
+    height: 25px;
+    width: 220px;
+    color: white;
+    background: #9fbff4;
+    border: 1px solid #568dea;
+    padding: 0;
+    margin: 0px 0 0 0;
+}
+#contactEmailForm
+{
+    float: left;
+    height: 25px;
+    width: 220px;
+    color: white;
+    background: #9fbff4;
+    border: 1px solid #568dea;
+    padding: 0;
+    margin: 10px 0 0 0;
+}
+#contactNameForm:focus, #contactEmailForm:focus, #contactTextForm:focus
+{
+    background: white;
+    color: #568dea;
+}
+
+/* send button */
+#contactParButton
+{
+    float: left;
+    margin: -65px 0 0 37px;
+    color: white;
+    font-family: Aller;
+    font-size: 24px;
+    height: 65px;
+    width: 160px;
+    background: #568dea;
+    border: none;
+}
+#contactParButton:active, #contactParButton:hover
+{
+    background: #9fbff4;
+    border: 1px solid #568dea;
+}
+
+/* contact informations */
+#contact
+{
+    float: left;
+    width: 500px;
+    margin: 0 0 40px 0;
+    padding: 0;
+    text-align: left;
+    height: 80px;
+}
+#contact p
+{
+    margin: 0;
+    padding: 0;
+    width: 160px;
+}
+#contact h2
+{
+    font-size: 16px;
+    color: #568dea;
+    margin: 0px 0 10px 0;
+}
+#contact h3
+{
+    font-size: 14px;
+    color: #568dea;
+    margin: 0px 0 0 0;
+    padding: 0;
+}
+#contactRight
+{
+    float: left;
+    width: 240px;
+    margin: 0 0 0 20px;
+    padding: 0;
+}
+#contactRight p
+{
+    margin-bottom: 20px;
+}
+#contactLeft
+{
+    float: left;
+    width: 240px;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+
+/* ABOUT PAGE */
+
+
+/* Who we are */
+#whoWeAre
+{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+    overflow: hidden;
+}
+#whoWeAre p
+{
+    width: 500px;
+}
+
+.underline
+{
+    padding: 0 0 5px 0px;
+    width: 500px;
+    border-bottom: 1px solid #568dea;
+    margin: 0 0 20px 0;
+}
+
+/* Meet the Team */
+#meetTeam
+{
+    float: left;
+    width: 520px;
+    height: 200px;
+    margin: 0px 0 40px 0;
+    padding: 0;
+}
+.meetCol
+{
+    float: left;
+    width: 180px;
+    height: 60px;
+    margin: 10px 20px 10px 0px;
+    padding: 0 0 0 60px;
+    overflow: hidden;
+}
+.meetCol h3
+{
+    margin: 0;
+    padding: 0px 0 10px 0;
+}
+.meetCol p
+{
+    margin: 0;
+    padding: 0;
+}
+#meetCol1
+{
+    background: url('img/avatars/avatar1.png') left top no-repeat;
+}
+#meetCol2
+{
+    background: url('img/avatars/avatar3.png') left top no-repeat;
+}
+#meetCol3
+{
+    background: url('img/avatars/avatar2.png') left top no-repeat;
+}
+#meetCol4
+{
+    background: url('img/avatars/avatar4.png') left top no-repeat;
+}
+
+
+
+/* BLOG PAGE */
+
+
+/* Posts */
+.post
+{
+    float: left;
+    position: relative;
+    width: 100%;
+    height: 270px;
+    margin: 0 0 40px 0;
+    overflow: hidden;
+}
+.post h1
+{
+    padding: 0 0 5px 0px;
+    width: 100%;
+    border-bottom: 1px solid #9fbff4;
+    margin: 0 0 20px 0;
+}
+.post img
+{
+    float: left;
+    width: 500px;
+    height: 160px;
+    padding: 0;
+    margin: 0;
+}
+.postText
+{
+    float: left;
+    margin: 10px 0 0 0;
+    width: 500px;
+    height: 40px;
+    overflow: hidden;
+}
+.comm
+{
+    position: absolute;
+    margin: 0;
+    width: 500px;
+    height: 20px;
+    text-align: right;
+}
+.comm p, .comm a
+{
+    color: #9fbff4;
+    padding: 0 0 0 0;
+    margin: 3px 0 0 0;
+    font-size: 10px;
+}
+.comm p a
+{
+    margin: 0 0px 15px 0px;
+    font-size: 12px;
+}
+.post a
+{
+    color: #568dea;
+}
+.read
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+a.comments
+{
+    float: right;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    color: white;
+    background: #568dea;
+    padding: 6px 0 0 0;
+    margin: 2px 0 0 10px;
+    font-size: 12px;
+}
+
+/* pagination */
+#pagination
+{
+    position: relative;
+    float: left;
+    width: 500px;
+    background: #568dea;
+    margin: 0 0 10px 0;
+}
+#numbers
+{
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+#numbers a:active, #numbers a:hover
+{
+    font-size: 16px;
+    padding: 3px 0 0 0;
+}
+#numbers span
+{
+    font-size: 16px;
+    padding: 3px 0 0 0;
+}
+#next
+{
+    float: right;
+    color: white;
+    padding: 5px;
+}
+#prev
+{
+    float: left;
+    padding: 5px;
+}
+
+
+
+
+/* PROJECT PAGE */
+
+
+/* about project */
+#aboutProject
+{
+    float: left;
+    width: 100%;
+    padding: 0;
+    margin: 0 0 30px 0;
+    overflow: hidden;
+}
+#aboutProject img
+{
+    float: left;
+    width: 500px;
+    height: 160px;
+    margin: 0 0 20px 0;
+}
+#aboutProject p
+{
+    width: 500px;
+}
+
+/* columns */
+#columns, #heading
+{
+    float: left;
+    width: 100%;
+    overflow: hidden;
+    margin: 0 0 30px 0;
+}
+.one
+{
+    float: left;
+    width: 500px;
+}
+.two
+{
+    float: left;
+    width: 240px;
+    padding: 20px 20px 0px 0;
+}
+.tree
+{
+    float: left;
+    width: 153px;
+    padding: 20px 20px 0px 0;
+}
+.four
+{
+    float: left;
+    width: 110px;
+    padding: 20px 20px 0px 0;
+}
+.last
+{
+    padding: 20px 0 0 0;
+}
+
+/* lists */
+.list
+{
+    float: left;
+    color: #9fbff4;
+    font-size: 12px;
+    width: 160px;
+}
+.headList
+{
+    padding: 0 0 10px 0;
+    margin: 0 0 0 -20px;
+}
+.first li
+{
+    list-style-type: circle;
+}
+.sec li
+{
+    list-style-type: square;
+}
+.th li
+{
+    list-style-type: disc;
+}
+.fo
+{
+    margin: 0 0 40px 0;
+}
+.fo li
+{
+    list-style-image: url('img/arrow.png');
+}
+
+
+
+
+/* FOOTER */
+
+
+#footer
+{
+    float: left;
+    width: 100%;
+    height: 50px;
+    border-top: 1px solid #568dea;
+    padding: 0;
+}
+#footer p
+{
+    float: left;
+    color: #568dea;
+    font-size: 10px;
+    margin: 7px 0 0 0;
+}
+#footerWrap
+{
+    width: 500px;
+}
+
+/* social icons */
+#fb
+{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url('img/icons/fb.png') no-repeat;
+    margin: 0 0 0 5px;
+}
+#tw
+{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url('img/icons/tw.png') no-repeat;
+    margin: 0 0 0 5px;
+}
+#rss
+{
+    float: right;
+    width: 20px;
+    height: 20px;
+    background: url('img/icons/rss.png') no-repeat;
+    margin: 0 0 0 5px;
+}

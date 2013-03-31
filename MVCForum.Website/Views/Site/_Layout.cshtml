@@ -1,0 +1,39 @@
+﻿@{
+    
+}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>X-ride : @ViewBag.Title</title>
+</head>
+<body>
+    <div>
+        <div>
+            <p id="back-top">
+                <a href="#top"><span></span>Наверх</a>
+            </p>
+        </div>
+        <div id="main">
+            <!-- header -->
+            <header>
+                <nav>
+                    <ul>
+                        <li><%= link_to "Home", main_app.root_path %></li>
+                        <li><%= link_to "Р‘Р°СЂР°С…РѕР»РєР°", main_app.parts_path %></li>
+                        <li><%= link_to "Events & Rides", main_app.events_path %></li>
+                        <li><%= link_to "Forum", "/forums" %></li>
+                        <li><a href="index-4.html">Join the Club</a></li>
+                        <li><a href="index-5.html">Photos</a></li>
+                        <li><a href="index-6.html">Contacts</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <a href="#" class="twitter">
+                <img src="images/twitter.png" alt="asdasd"></a>
+            <div id="content">
+                @RenderBody()
+            </div>
+        </div>
+    </div>
+</body>
+</html>

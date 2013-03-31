@@ -1,0 +1,141 @@
+#### NOTE #### 
+
+Db & Upgrade scripts that you can paste directly into SQL Express are found in MVCforum.Website project
+
+Installer > Db > 'Then Choose version number'
+
+==============================
+============ v1.0 ============
+==============================
+
+N/A
+
+==============================
+============ v1.1 ============
+==============================
+
+Added primary key to Activity Table 'Id' field
+ALTER TABLE [dbo].[Activity] ADD  CONSTRAINT [PK_Activity] PRIMARY KEY CLUSTERED 
+([Id] ASC) WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+Added primary key to BadgeTypeTimeLastChecked Table 'Id' field
+ALTER TABLE [dbo].[BadgeTypeTimeLastChecked] ADD  CONSTRAINT [PK_BadgeTypeTimeLastChecked] PRIMARY KEY CLUSTERED 
+([Id] ASC)WITH (PAD_INDEX  = OFF, STATISTICS_NORECOMPUTE  = OFF, SORT_IN_TEMPDB = OFF, IGNORE_DUP_KEY = OFF, ONLINE = OFF, ALLOW_ROW_LOCKS  = ON, ALLOW_PAGE_LOCKS  = ON) ON [PRIMARY]
+GO
+
+Updated table 'Topic'
+---- Poll_Id (Guid) allow nulls
+ALTER TABLE Topic ADD Poll_Id uniqueidentifier
+** Update name to nvarchar(450)
+** Update slug to nvarchar(450)
+
+Updated table 'Category'
+** Update name to nvarchar(450)
+** Update slug to nvarchar(450)
+
+Updated table 'TopicTag'
+** Update name to nvarchar(100)
+
+Added new table 'Poll'
+---- Id (Guid) PK
+---- IsClosed (bit)
+---- MembershipUser_Id (Guid)
+---- DateCreated (DateTime)
+++++ FK_Poll_MembershipUser
+
+Added new table 'PollAnswer'
+---- Id (Guid) PK
+---- Answer (nvarchar(600))
+---- Poll_Id (Guid)
+++++ FK_PollAnswer_Poll
+
+Added new table 'PollVote'
+---- Id (Guid) PK
+---- MembershipUser_Id (Guid)
+---- PollAnswer_Id (Guid)
+++++ FK_PollVote_MembershipUser
+++++ FK_PollVote_PollAnswer
+
+Added to Settings
+---- EnableAkisment (bit) allow nulls
+---- AkismentKey (nvarchar(100)) allow nulls
+---- CurrentDatabaseVersion (nvarchar(10)) allow nulls
+---- SMTPPort (nvarchar(10)) allow nulls
+---- SpamQuestion (nvarchar(500)) allow nulls
+---- SpamAnswer (nvarchar(500)) allow nulls
+---- SMTPEnableSSL (bit) allow nulls
+---- EnableSocialLogins (bit) allow nulls
+---- EnablePolls (bit) allow nulls
+
+Added to Post
+---- FlaggedAsSpam (bit) allow nulls
+
+Added to MembershipUser
+---- Avatar (nvarchar(250)) allow nulls
+---- FacebookAccessToken (nvarchar(150)) allow nulls
+---- FacebookId (bigint) allow nulls
+---- TwitterAccessToken (nvarchar(150)) allow nulls
+---- TwitterId (nvarchar(150)) allow nulls
+---- GoogleAccessToken (nvarchar(150)) allow nulls
+---- GoogleId (nvarchar(150)) allow nulls
+---- MiscAccessToken (nvarchar(150)) allow nulls
+---- IsExternalAccount (bit) allow nulls
+---- TwitterShowFeed (bit) allow nulls
+---- LoginIdExpires (datetime) allow nulls
+---- Latitude (nvarchar(40)) allow nulls
+---- Longitude (nvarchar(40)) allow nulls
+** Updated UserName to nvarchar(150)
+** Update slug to nvarchar(150)
+
+Added to Permission (Data)
+---- Vote In Polls
+
+Added Language Strings
+---- Topic.Label.TopicTitle = Title
+---- Poll.Button.Create = Add A Poll To This Topic
+---- Poll.Button.Remove = Remove Poll From Topic
+---- Poll.Placeholder.TypeAnswerHere = Type A Poll Answer Here
+---- Topic.OptionsHeading = Topic Options
+---- Poll.Button.Vote = Submit Vote
+---- Error.WrongAnswerRegistration = There was an error with your answer, please try again
+---- Members.LoginOrText = Or
+---- Facebook.Error.EnabledButNotAddedKeys = You have enabled Facebook login but not added your AppId or Secret key to the web.config
+---- Members.Profile.IsSocialAccount = Social Account
+
+Web.config Changes
+
+<add key="FacebookAppId" value=""/>
+<add key="FacebookAppSecret" value="" />
+<globalization fileEncoding="utf-8" requestEncoding="utf-8" responseEncoding="utf-8" />
+
+<system.webServer>
+    <security>
+        <requestFiltering allowDoubleEscaping="true"/>
+    </security>
+</system.webServer>
+
+<httpRuntime requestValidationMode="2.0"
+             requestPathInvalidCharacters="*,:,&amp;,\"
+             relaxedUrlToFileSystemMapping="true" maxRequestPathLength="260" maxQueryStringLength="2048" />
+
+==============================
+============ v1.2 ============
+==============================
+
+---- Added Language Strings
+---- Date.JustNow = Just now
+---- Date.OneMinuteAgo = 1 minute ago
+---- Date.MinutesAgo = {0} minutes ago
+---- Date.OneHourAgo = 1 hour ago
+---- Date.HoursAgo = {0} hours ago
+---- Date.Yesterday = yesterday
+---- Date.DaysAgo = {0} days ago
+---- Date.WeeksAgo = {0} weeks ago
+---- Side.Search = Search
+---- Search.NoResults = Sorry no results found
+
+==============================
+============ v1.3 ============
+==============================
+
