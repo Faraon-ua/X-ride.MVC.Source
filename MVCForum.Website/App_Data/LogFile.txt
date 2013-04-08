@@ -41,3 +41,61 @@ Login failed for user 'sa'.
 31/03/2013 21:21:01 | MVCForum.Services.DLL | GenerateBadgeActivity | A badge activity record with id '94d41e30-78a7-4b50-a9af-a19201203db0' has a user id 'afe9517a-2139-40ca-a7f4-a02800e572a4' that is not found in the user table.
 31/03/2013 21:21:02 | MVCForum.Services.DLL | GenerateMemberJoinedActivity | A member joined activity record with id 'd1914fb7-5117-4b70-9dfe-a18c00009910' has a user id 'a992a0ac-fc80-444c-9d5e-a18c0000989a' that is not found in the user table.
 31/03/2013 22:06:59 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 00:41:07 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 00:41:17 | MVCForum.Website.DLL | Application_Error | Object reference not set to an instance of an object.
+01/04/2013 00:43:46 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 00:44:02 | MVCForum.Website.DLL | Application_Error | The specified named connection is either not found in the configuration, not intended to be used with the EntityClient provider, or not valid.
+01/04/2013 00:44:50 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 00:44:53 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 00:52:18 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 00:52:48 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 00:52:49 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 00:55:13 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 00:55:44 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:09:01 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 01:09:03 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:09:54 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:10:36 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:10:38 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:10:39 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:10:39 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:12:08 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:13:24 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:13:24 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:18:06 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:18:06 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:48 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:49 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:52 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:53 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:55 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:55 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:59 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:19:59 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:22:14 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:22:15 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:25:30 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:25:30 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:26:46 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:26:46 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:27:50 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:27:50 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:30:10 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:30:10 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:30:29 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:30:30 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:32:21 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:32:21 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:32:42 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:32:42 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:32:59 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:33:00 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:33:12 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:33:12 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:34:39 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:34:40 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:36:17 | MVCForum.Website.DLL | Application_Start | START APP
+01/04/2013 01:36:20 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:36:20 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:36:41 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.
+01/04/2013 01:36:41 | MVCForum.Website.DLL | Application_Error | The controller for path '/images/twitter.png' was not found or does not implement IController.

@@ -3,10 +3,16 @@
 }
 <!DOCTYPE html>
 <html>
-<head>
-    <title>X-ride : @ViewBag.Title</title>
-</head>
-<body>
+    <head>
+        <title>X-ride : @ViewBag.Title</title>
+        
+        <link href="@Url.Content("~/Content/Styles/site.css")" rel="stylesheet" type="text/css" />
+        <link href="@Url.Content("~/Content/Styles/back_top.css")" rel="stylesheet" type="text/css" />
+        
+        <script src="http://code.jquery.com/jquery-1.9.1.min.js" type="text/javascript"></script>
+        <script src="@Url.Content("~/Scripts/site/back_top.js")" type="text/javascript"></script>
+    </head>
+<body id="#top">
     <div>
         <div>
             <p id="back-top">
@@ -18,10 +24,10 @@
             <header>
                 <nav>
                     <ul>
-                        <li><%= link_to "Home", main_app.root_path %></li>
-                        <li><%= link_to "Р‘Р°СЂР°С…РѕР»РєР°", main_app.parts_path %></li>
-                        <li><%= link_to "Events & Rides", main_app.events_path %></li>
-                        <li><%= link_to "Forum", "/forums" %></li>
+                        <li><a>Home</a></li>
+                        <li><a>Барахолка</a></li>
+                        <li><a>Покатушки</a></li>
+                        <li><a>Форум</a></li>
                         <li><a href="index-4.html">Join the Club</a></li>
                         <li><a href="index-5.html">Photos</a></li>
                         <li><a href="index-6.html">Contacts</a></li>

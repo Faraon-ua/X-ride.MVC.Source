@@ -6,6 +6,7 @@ using MVCForum.Domain.DomainModel;
 using MVCForum.Domain.Interfaces.Services;
 using MVCForum.Domain.Interfaces.UnitOfWork;
 using MVCForum.Website.Application;
+using MVCForum.Website.Models;
 using MVCForum.Website.ViewModels;
 using System.Linq;
 
@@ -46,9 +47,11 @@ namespace MVCForum.Website.Controllers
         [OutputCache(Duration = AppConstants.DefaultCacheLengthInSeconds)]
         public PartialViewResult ListCategorySideMenu()
         {
-            var catViewModel = new CategoryListViewModel { 
-                AllPermissionSets = new Dictionary<Category, PermissionSet>(), 
-                AllSubCategories = new Dictionary<Category, IEnumerable<Category>>() };
+            var catViewModel = new CategoryListViewModel
+            {
+                AllPermissionSets = new Dictionary<Category, PermissionSet>(),
+                AllSubCategories = new Dictionary<Category, IEnumerable<Category>>()
+            };
 
             using (UnitOfWorkManager.NewUnitOfWork())
             {
@@ -58,7 +61,7 @@ namespace MVCForum.Website.Controllers
                     catViewModel.AllPermissionSets.Add(category, permissionSet);
 
                     var subCats = _categoryService.GetAllSubCategories(category.Id);
-                    catViewModel.AllSubCategories.Add(category, subCats); 
+                    catViewModel.AllSubCategories.Add(category, subCats);
                 }
             }
 
